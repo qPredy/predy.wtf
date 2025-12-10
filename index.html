@@ -1,337 +1,209 @@
-
 <!DOCTYPE html>
-
-
-<body class="my">
-  <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html lang="en">
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Predy </title>
+    <title>Predy</title>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
-</head>
-<body>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <style>
-
         @import url("https://fonts.xz.style/serve/fira-code.css");
-        .pfp{
-          font-family: 'JetBrains Mono';
-          display: block;
-           margin-left: auto;
-          margin-right: auto;
-  width: 50%;
-  border-radius: 50%;
-  filter: drop-shadow(0 0 0.75rem rgba(161, 161, 161, 0.678));
-        }
 
-    .content {
-      max-height: 0;
-      overflow: hidden;
-    }
-    .PGP input[type="content"]:checked + label + .content{
-      max-height: 400px;
-      padding: 10px 0px 20px;
-    }
-
-    .accordion {
-
-background-color: rgb(10, 10, 10);
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-.panel {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-}
-.fab fa-discord{
-  color: rgb(0, 0, 0);
-}
-nav{
-  text-align: center;
-  filter: drop-shadow(0 0 0.75rem #494949);
-}
-
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-
-::-webkit-scrollbar-track {
-  background: #111111; 
-}
- 
-
-::-webkit-scrollbar-thumb {
-  background: #0a0a0a; 
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
-
-.Socials {
-  opacity: 0.2;
-  font-family: 'JetBrains Mono';
-}
-
-blockquote {
-  font-family: 'JetBrains Mono';
-  border-radius: 10px;
-}
-
-.malware {
-    color: #8c0000;
-    filter: drop-shadow(0 0 0.75rem rgba(255, 0, 0, 0.678));
-    text-decoration:line-through;
-}
-
-.goodware {
-    color: #ffffff;
-    filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.678));
-}
-    </style>
-    
-    <header style="padding-bottom: 10px !important">
-        <h1>
-          <div class="wrapper">
-            <h2 class="typer"></h2>
-            </div> 
- <h1 class="pfp" style="text-align: center;"> { Predy.<span style="color: #4A90E2;">py</span> }</h1>
-<br>
- <p class="Socials" style="text-align: center;">Yea it's me :3</p>
- <br>
-</div>
-        </h1>
-    </header>
-    <br>
-   
-
-    <h2 style="padding-bottom: 10px;">Who am I ?</h2>
-
-    <blockquote><i> 
-        <p>
-            I am a <span class="malware">Malware</span> and <span class="goodware"> Goodware </span> developer.
-        </p>
-        </br>
-        <p> I have skills in languages: </p>
-        
-        <div style="display: flex;  gap: 10px;">
-        <p>
-           
-            <p style="color: #4A90E2;"> Python </p>
-            <p style="color: #d5d808;"> JavaScript</p>
-            <p style="color: green;"> PHP</p>
-            <p style=" color: rgb(255, 137, 255);">C</p>
-        </p>
-    </div>
-    
-        </p>
-    </blockquote>
-    <h2 style="padding-bottom: 10px;">Contact Me:</h2>
-    <blockquote>  
-        
-        <table>
-        <tr>
-          <th style="color: #4c4c4c;"> Type </th>
-          <th style="color: #4c4c4c;"> Username </th>
-          <th style="color: #4c4c4c;"> Platform </th>
-        </tr>
-      
-        <tr>
-      
-          <td>User Profile</td>
-          <td><a href="https://discord.com/users/906271609436905473" target="_blank"> predy.py </a></td>
-          <td><i class="fab fa-discord"></i> Discord </td>
-      
-        </tr>
-      
-        <tr>
-          <td>User Profile</td>
-          <td><a href="https://www.instagram.com/predy.py/" target="_blank"> predy.py </a></td>
-          <td><i class="fab fa-instagram"></i> İnstagram </td>
-      
-      
-        </tr>
-      
-        </table>
-      </blockquote>
-
-    <span style="color: gray; font-size: 17px; display: block; text-align: center; margin: 5; padding: 5;">
-    ~ { predy.fun } ~ 
-  </span>
-</div>
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }
-    </script>
-    <script>
-      var rev = "fwd";
-
-      function titlebar(val) {
-          var msg = "predy";
-          var res = " ";
-          var speed = 50;
-          var pos = val;
-          msg = "" + msg + "";
-          var le = msg.length;
-          if (rev == "fwd") {
-              if (pos < le) {
-                  pos = pos + 1;
-                  scroll = msg.substr(0, pos);
-                  document.title = scroll;
-                  timer = window.setTimeout("titlebar(" + pos + ")", speed);
-              } else {
-                  rev = "bwd";
-                  timer = window.setTimeout("titlebar(" + pos + ")", speed);
-              }
-          } else {
-              if (pos > 0) {
-                  pos = pos - 1;
-                  var ale = le - pos;
-                  scrol = msg.substr(ale, le);
-                  document.title = scrol;
-                  timer = window.setTimeout("titlebar(" + pos + ")", speed);
-              } else {
-                  rev = "fwd";
-                  timer = window.setTimeout("titlebar(" + pos + ")", speed);
-              }
-          }
-      }
-      titlebar(0);
-  </script>
-<script language="JavaScript">
-  document.oncontextmenu =new Function("return false;")
-  </script>    
-  <body onselectstart="return false">
-    <script>
-      document.onkeydown = function(e) {
-              if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) 
-              return false;
-      };
-      </script>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      <script>
-      
-      $(document).keydown(function (event) {
-          if (event.keyCode == 123) { 
-              alert('Content is protected\nYou cannot view the Dev Tools.');
-          return false;
-          } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73)
-          return false;
-          }
-        );
-      </script>
-      <script>
-                document.addEventListener('DOMContentLoaded', (event) => {
-            let keys = ['s', 'p', 'i', 'n', 'o', 'z', 'a'];
-            let userInput = [];
-
-            document.addEventListener('keydown', function(e) {
-                const key = e.key.toLowerCase();
-                userInput.push(key);
-                if (userInput.length > keys.length) {
-                    userInput.shift();
-                }
-                if (userInput.join('') === keys.join('')) {
-                    window.location.href = 'https://spinoza.wtf';
-                }
-            });
-        });
-
-
-      </script>
-            <script>
-                document.addEventListener('DOMContentLoaded', (event) => {
-            let keys = ['l', 'e', 'a', 'k'];
-            let userInput = [];
-
-            document.addEventListener('keydown', function(e) {
-                const key = e.key.toLowerCase();
-                userInput.push(key);
-                if (userInput.length > keys.length) {
-                    userInput.shift();
-                }
-                if (userInput.join('') === keys.join('')) {
-                    window.location.href = 'https://spinoza.wtf';
-                }
-            });
-        });
-
-
-      </script>
-</body>
-  <script src="oneko.js"></script>
-<style>
-body {
+        body {
             animation: fadeInAnimation ease 3s;
-            animation-iteration-count: 1;
             animation-fill-mode: forwards;
+            font-family: 'JetBrains Mono';
+            user-select: none;
         }
 
         @keyframes fadeInAnimation {
-            0% {
-                opacity: 0;
-            }
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
 
-            100% {
-                opacity: 1;
+        
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #111; }
+        ::-webkit-scrollbar-thumb { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+
+        
+        .predyText {
+            font-size: 32px;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 20px;
+            transition: color .5s ease-in-out;
+        }
+
+        .predyText:hover {
+            animation: zomg 1.0s infinite;
+        }
+
+        @keyframes zomg {
+            0%, 100% { color: #ff0000; }
+            16%      { color: #ff6200; }
+            32%      { color: #eeff00; }
+            48%      { color: #00ff2a; }
+            64%      { color: #00ccff; }
+            80%      { color: #0008ff; }
+        }
+
+        .Socials {
+            opacity: 0.2;
+            text-align: center;
+        }
+
+        blockquote {
+            border-radius: 10px;
+            font-family: 'JetBrains Mono';
+        }
+
+        .malware {
+            color: #8c0000;
+            filter: drop-shadow(0 0 0.75rem rgba(255, 0, 0, 0.7));
+            text-decoration: line-through;
+        }
+
+        .goodware {
+            color: white;
+            filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.7));
+        }
+
+        table th {
+            color: #4c4c4c;
+        }
+
+        
+        @media (max-width: 600px) {
+            .predyText {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="predyText">{ Predy.<span style="color:#4A90E2;">py</span> }</h1>
+    <p class="Socials">Yea it's me :3</p>
+
+    <h2>Who am I?</h2>
+    <blockquote>
+        <p>I am a <span class="malware">Malware</span> and <span class="goodware">Goodware</span> developer.</p>
+        <br>
+        <p>I have skills in languages:</p>
+
+        <div style="display: flex; gap: 15px;">
+            <p style="color:#4A90E2;">Python</p>
+            <p style="color:#d5d808;">JavaScript</p>
+            <p style="color:green;">PHP</p>
+            <p style="color:rgb(255,137,255);">C</p>
+        </div>
+    </blockquote>
+
+    <h2>Contact Me:</h2>
+    <blockquote>
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Username</th>
+                <th>Platform</th>
+            </tr>
+
+            <tr>
+                <td>User Profile</td>
+                <td><a href="https://discord.com/users/906271609436905473" target="_blank">predy.py</a></td>
+                <td><i class="fab fa-discord"></i> Discord</td>
+            </tr>
+
+            <tr>
+                <td>User Profile</td>
+                <td><a href="https://www.instagram.com/predy.py/" target="_blank">predy.py</a></td>
+                <td><i class="fab fa-instagram"></i> Instagram</td>
+            </tr>
+        </table>
+    </blockquote>
+
+    <span style="color:gray; font-size:17px; display:block; text-align:center;">~ { predy.fun } ~</span>
+
+   
+    <script>
+        var rev = "fwd";
+
+        function titlebar(val) {
+            var msg = "predy";
+            var speed = 50;
+            var pos = val;
+            var le = msg.length;
+
+            if (rev == "fwd") {
+                if (pos < le) {
+                    pos++;
+                    document.title = msg.substr(0, pos);
+                    setTimeout(() => titlebar(pos), speed);
+                } else {
+                    rev = "bwd";
+                    setTimeout(() => titlebar(pos), speed);
+                }
+            } else {
+                if (pos > 0) {
+                    pos--;
+                    var ale = le - pos;
+                    document.title = msg.substr(ale, le);
+                    setTimeout(() => titlebar(pos), speed);
+                } else {
+                    rev = "fwd";
+                    setTimeout(() => titlebar(pos), speed);
+                }
             }
         }
 
+        titlebar(0);
+    </script>
 
-        .pfp {
-  color: #ffffff;
-  transition: color .5s ease-in-out;
-	-moz-transition: color .5s ease-in-out;
-  text-decoration: none;
-}
+    
+    <script>document.oncontextmenu = () => false;</script>
 
-.pfp:hover {
-  -webkit-animation: zomg 1.0s infinite;
-  animation: zomg 1.0s infinite;
-}
+   
+    <script>
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117))
+                return false;
+        };
+    </script>
 
-@-webkit-keyframes zomg {
-  0%, 100% { color: #ff0000; }
-  16%      { color: #ff6200; }
-  32%      { color: #eeff00; }
-  48%      { color: #00ff2a; }
-  64%      { color: #00ccff; }
-  80%      { color: #0008ff; }
-}
-@keyframes zomg {
-  0%, 100% { color: #ff0000; }
-  16%      { color: #ff6200; }
-  32%      { color: #eeff00; }
-  48%      { color: #00ff2a; }
-  64%      { color: #00ccff; }
-  80%      { color: #0008ff; }
-}
-</style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).keydown(function(event) {
+            if (event.keyCode == 123) {
+                alert('Content is protected\nYou cannot view the Dev Tools.');
+                return false;
+            }
+        });
+    </script>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let keys = ['s','p','i','n','o','z','a'];
+            let input = [];
+
+            document.addEventListener('keydown', e => {
+                input.push(e.key.toLowerCase());
+                if (input.length > keys.length) input.shift();
+                if (input.join('') === keys.join('')) window.location.href = 'https://spinoza.dev';
+            });
+        });
+    </script>
+
+</body>
+</html>
